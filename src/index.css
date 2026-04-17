@@ -10,30 +10,31 @@ body {
 }
 
 @theme {
-  --color-navy-50: #E8EDF5;
-  --color-navy-100: #C2CEDE;
-  --color-navy-500: #2D4A72;
-  --color-navy-700: #162B4D;
-  --color-navy-900: #080F1E;
+    --color-primary: #080F1E;
+    --color-navy-50: #E8EDF5;
+    --color-navy-100: #C2CEDE;
+    --color-navy-500: #2D4A72;
+    --color-navy-700: #162B4D;
+    --color-navy-900: #080F1E;
 
-  --color-cyan-e-200: #6DE0F5;
-  --color-cyan-e-400: #0DC8E8;
-  --color-cyan-e-500: #08A8C8;
-  --color-cyan-e-700: #047090;
+    --color-cyan-e-200: #6DE0F5;
+    --color-cyan-e-400: #0DC8E8;
+    --color-cyan-e-500: #08A8C8;
+    --color-cyan-e-700: #047090;
 
-  --color-slate-e-50:  #F4F5F7;
-  --color-slate-e-200: #C4CAD6;
-  --color-slate-e-600: #4F5A6E;
-  --color-slate-e-800: #252D3D;
-  --color-slate-e-950: #111827;
+    --color-slate-e-50: #F4F5F7;
+    --color-slate-e-200: #C4CAD6;
+    --color-slate-e-600: #4F5A6E;
+    --color-slate-e-800: #252D3D;
+    --color-slate-e-950: #111827;
 
-  --color-amber-e-300: #FFCA44;
-  --color-amber-e-400: #F5A800;
-  --color-amber-e-900: #3D2600;
+    --color-amber-e-300: #FFCA44;
+    --color-amber-e-400: #F5A800;
+    --color-amber-e-900: #3D2600;
 
-  --color-green-e-400: #22C55E;
-  --color-green-e-800: #0A4425;
+    --color-green-e-400: #22C55E;
+    --color-green-e-800: #0A4425;
 
-  --color-red-e-400: #EF4444;
-  --color-red-e-800: #6B1111;
+    --color-red-e-400: #EF4444;
+    --color-red-e-800: #6B1111;
 }

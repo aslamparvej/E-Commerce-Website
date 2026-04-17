@@ -14,7 +14,6 @@ function App() {
       <Topbar />
       <Header />
       <main>
-        <Cart />
         <ProductList />
       </main>
 
