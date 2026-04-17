@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
-
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../features/products/productSlice";
-import { addToCart } from "../features/cart/cartSlice";
+
+import ProductCard from "./UI/ProductCard";
+
 
 const ProductList = () => {
   const dispatch = useDispatch();
@@ -15,15 +16,9 @@ const ProductList = () => {
   if (loading) return <h1>Lodding</h1>;
 
   return (
-    <div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12">
       {items.map((product) => (
-        <div key={product.id}>
-          <h3>{product.title}</h3>
-          <p>${product.price}</p>
-          <button onClick={() => dispatch(addToCart(product))}>
-            Add to Cart
-          </button>
-        </div>
+        <ProductCard product={product} key={product.id} />
       ))}
     </div>
   );

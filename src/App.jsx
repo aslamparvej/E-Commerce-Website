@@ -13,10 +13,10 @@ function App() {
     <Router>
       <Topbar />
       <Header />
-      <main>
+      <main className="max-w-7xl mx-auto sm:px-6 lg:px-8 py-6 sm:py-8">
+        <h3 className="text-4xl sm:text-3xl md:text-4xl mb-4 font-semibold text-black">Explore Our Products</h3>
         <ProductList />
       </main>
-
     </Router>
   );
 }
