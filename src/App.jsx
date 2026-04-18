@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import Cart from "./components/Cart";
 import Topbar from "./components/Topbar";
 import Header from "./components/Header";
-
-import Cart from "./components/Cart";
+import Footer from "./components/Footer";
 import ProductList from "./components/ProductList";
+
 
 import "./App.css";
 
@@ -17,6 +18,7 @@ function App() {
         <h3 className="text-4xl sm:text-3xl md:text-4xl mb-4 font-semibold text-black">Explore Our Products</h3>
         <ProductList />
       </main>
+      <Footer />
     </Router>
   );
 }
