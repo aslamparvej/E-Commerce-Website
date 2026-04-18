@@ -20,9 +20,9 @@ const ProductCard = ({ product }) => {
       <h2 className="text-lg font-medium truncate">{product.title}</h2>
       <div className="flex items-center justify-between mt-2">
         <p className="text-lg font-semibold">${product.price}</p>
-        <p>
+        <div>
           <RatingStars rate={product.rating.rate} count={product.rating.count} />
-        </p>
+        </div>
       </div>
       <button
         className="w-full px-4 py-3 mt-4 bg-primary text-white cursor-pointer rounded-lg hover:bg-navy-700"
