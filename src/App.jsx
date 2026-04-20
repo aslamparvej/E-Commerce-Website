@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cart from "./components/Cart";
 import Topbar from "./components/Topbar";
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import ProductList from "./components/ProductList";
 
@@ -14,8 +15,8 @@ function App() {
     <Router>
       <Topbar />
       <Header />
-      <main className="max-w-7xl mx-auto sm:px-6 lg:px-8 py-6 sm:py-8">
-        <h3 className="text-4xl sm:text-3xl md:text-4xl mb-4 font-semibold text-black">Explore Our Products</h3>
+      <main className="max-w-7xl mx-auto sm:px-6 lg:px-0">
+        <Hero />
         <ProductList />
       </main>
       <Footer />
