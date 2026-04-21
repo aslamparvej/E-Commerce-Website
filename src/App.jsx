@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import ProductList from "./components/ProductList";
+import Features from "./components/Features";
 
 
 import "./App.css";
@@ -18,6 +19,7 @@ function App() {
       <main className="max-w-7xl mx-auto sm:px-6 lg:px-0">
         <Hero />
         <ProductList />
+        <Features />
       </main>
       <Footer />
     </Router>

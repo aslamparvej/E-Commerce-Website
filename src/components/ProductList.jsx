@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../features/products/productSlice";
 
 import ProductCard from "./UI/ProductCard";
+import Loading from "./Loading";
 
 
 const ProductList = () => {
@@ -13,7 +14,7 @@ const ProductList = () => {
     dispatch(fetchProducts());
   }, []);
 
-  if (loading) return <h1>Lodding</h1>;
+  if (loading) return <Loading />;
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12">

@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
   console.log(product);
   return (
     <div className="">
-      <div className="h-90 p-4 bg-gray-100">
+      <div className="h-70 p-4 bg-gray-100">
         <img
           className="h-full w-full object-contain"
           src={product.image}
