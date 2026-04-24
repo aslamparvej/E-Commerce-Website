@@ -8,6 +8,10 @@ import Footer from "./components/Footer";
 import ProductList from "./components/ProductList";
 import Features from "./components/Features";
 
+import Home from "./pages/Home";
+import Login from "./pages/Auth/Login";
+import Signup from "./pages/Auth/Signup";
+import NotFound from "./pages/NotFound";
 
 import "./App.css";
 
@@ -16,10 +20,13 @@ function App() {
     <Router>
       <Topbar />
       <Header />
-      <main className="max-w-7xl mx-auto sm:px-6 lg:px-0">
-        <Hero />
-        <ProductList />
-        <Features />
+      <main className="min-h-[calc(100vh-7.4375rem)] max-w-7xl mx-auto sm:px-6 lg:px-0">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </main>
       <Footer />
     </Router>
