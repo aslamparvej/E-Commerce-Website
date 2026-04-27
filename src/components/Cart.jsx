@@ -92,9 +92,9 @@ const Cart = () => {
                 </div>
               </div>
 
-              <Link to="/checkout">
+              <Link to="/cart">
                 <button className="w-full px-4 py-3 rounded-lg bg-primary text-white cursor-pointer hover:bg-navy-700">
-                  Checkout
+                  Go to Cart
                 </button>
               </Link>
             </div>
