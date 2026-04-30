@@ -32,7 +32,7 @@ const Hero = () => {
       <div className="hidden lg:block w-64 shrink-0">
         <Sidebar />
       </div>
-      <div className="flex-1 p-4 sm:p-6 lg:p-8 pb-0">
+      <div className="flex-1 p-4 sm:p-6 lg:p-8 pb-0 w-full">
         <Carousel slides={slides} />
       </div>
     </section>

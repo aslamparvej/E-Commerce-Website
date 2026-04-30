@@ -34,7 +34,7 @@ const Carousel = ({ slides, autoSlide = true, interval = 3000 }) => {
                 <p className="text-white text-lg">{slide.subtitle}</p>
               )}
               {slide.title && (
-                <h2 className="text-white text-5xl leading-tight font-semibold">
+                <h2 className="text-white md:text-5xl lg:text-5xl text-2xl leading-tight font-semibold">
                   {slide.title}
                 </h2>
               )}

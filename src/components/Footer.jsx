@@ -2,9 +2,10 @@ import React from "react";
 import { Copyright } from "lucide-react";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-black text-white">
-      <div className="max-w-7xl mx-auto py-20">
+      <div className="max-w-7xl mx-auto py-20 px-6 lg:px-0 md:px-0">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
           {/* Column 1 - Subscribe */}
           <div>
@@ -126,8 +127,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="py-4 border-t-[0.5px] border-gray-800">
-        <p className="flex gap-2 justify-center text-[1rem] text-[#F9F9F933] text-center">
-          <Copyright /> Copyright Gudget Hunter {Date.year}. All right reserved
+        <p className="flex gap-2 justify-center items-center text-[1rem] text-[#F9F9F933] text-center">
+          <Copyright size={16} /> Copyright Gudget Hunter {currentYear}. All right reserved
         </p>
       </div>
     </footer>
