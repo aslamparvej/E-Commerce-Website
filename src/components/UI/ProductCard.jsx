@@ -1,15 +1,16 @@
 import React from "react";
+import {useNavigate} from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../features/cart/cartSlice";
 import RatingStars from "./RatingStars";
 
 const ProductCard = ({ product }) => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const stars = [];
 
-  console.log(product);
   return (
-    <div className="">
+    <div className="cursor-pointer" onClick={() => navigate(`/product/${product.id}`)}>
       <div className="h-70 p-4 bg-gray-100">
         <img
           className="h-full w-full object-contain"

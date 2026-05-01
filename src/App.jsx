@@ -12,6 +12,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Auth/Login";
 import Signup from "./pages/Auth/Signup";
 import CartPage from "./pages/Cart";
+import ProductDetail from "./pages/ProductDetail";
 import NotFound from "./pages/NotFound";
 
 import "./App.css";
@@ -27,6 +28,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/cart" element={<CartPage />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
