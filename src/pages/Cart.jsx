@@ -167,12 +167,18 @@ const Cart = () => {
                   <p className="text-gray-500">Shipping</p>
                   <p className="font-medium">${shipping.toFixed(2)}</p>
                 </div>
-                <div className="flex justify-between font-bold text-lg mt-4">
+                <div className="flex justify-between font-bold text-lg my-4">
                   <p>Total</p>
                   <p>${total.toFixed(2)}</p>
                 </div>
+
+                <div className="text-end mt-8">
+                  <Link to="/checkout" className="w-full px-4 py-3 mt-4 bg-primary text-white cursor-pointer rounded-lg hover:bg-navy-700">
+                    Checkout
+                  </Link>
+                </div>
               </div>
-            </div>
+            </div>            
           </>
         )}
       </div>
